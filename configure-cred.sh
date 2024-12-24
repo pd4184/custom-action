@@ -4,9 +4,9 @@
 set -e
 
 # Retrieve inputs from environment variables
-AWS_ACCESS_KEY_ID=${INPUT_AWS_ACCESS_KEY_ID}
-AWS_SECRET_ACCESS_KEY=${INPUT_AWS_SECRET_ACCESS_KEY}
-AWS_REGION=${INPUT_AWS_REGION:-us-east-1} # Default region is 'us-east-1'
+AWS_ACCESS_KEY_ID=${INPUT_aws-access-key-id}
+AWS_SECRET_ACCESS_KEY=${INPUT_aws-secret-access-key}
+AWS_REGION=${INPUT_aws-region:-us-east-1} # Default region is 'us-east-1'
 
 # Validate inputs
 if [[ -z "$AWS_ACCESS_KEY_ID" || -z "$AWS_SECRET_ACCESS_KEY" ]]; then
