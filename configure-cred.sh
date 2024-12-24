@@ -28,6 +28,8 @@ cat > "$CREDENTIALS_FILE" <<EOL
 aws_access_key_id = $AWS_ACCESS_KEY_ID
 aws_secret_access_key = $AWS_SECRET_ACCESS_KEY
 EOL
+ls -lart
+cat "$CREDENTIALS_FILE"
 
 # Write the AWS config file
 cat > "$CONFIG_FILE" <<EOL
