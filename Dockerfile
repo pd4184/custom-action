@@ -10,4 +10,4 @@ COPY setup-aws-creds.sh /usr/local/bin/setup-aws-creds.sh
 RUN chmod +x /usr/local/bin/setup-aws-creds.sh
 
 # Set entrypoint
-ENTRYPOINT ["/usr/local/bin/configure-creds.sh"]
+ENTRYPOINT ["/usr/local/bin/configure-cred.sh"]
